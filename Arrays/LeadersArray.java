@@ -17,9 +17,7 @@ public class LeadersArray {
                 rightMost=nums[i];
             }
         }
-
-
-
+        
         // for (int i = 0; i < n; i++) {
         //     boolean isLeader = true;
         //     for (int j = i + 1; j < n; j++) {
@@ -30,6 +28,7 @@ public class LeadersArray {
         //     }
         //     if(isLeader) res.add(nums[i]);
         // }
+
         return res;
 
     }
