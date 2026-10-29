@@ -23,21 +23,22 @@ public class LL_15_3Sum {
 
                 if (sum == 0) {
                     res.add(Arrays.asList(nums[i], nums[L], nums[R]));
-
+                     while (L < R && nums[L] == nums[L + 1]) {
+                        L++;
+                    }
+                     while (L < R && nums[R] == nums[R - 1]) {
+                        R--;
+                    }
                     L++;
                     R--;
                 } else if (sum < 0) {
                     L++;
-                    while (L < R && nums[L] == nums[L + 1]) {
-                        L++;
-                    }
+                   
 
                 } else {
                     R--;
 
-                    while (L < R && nums[R] == nums[R - 1]) {
-                        R--;
-                    }
+                   
 
                 }
             }
